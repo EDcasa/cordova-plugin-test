@@ -53,7 +53,7 @@ public class MiPlugin extends CordovaPlugin {
       // Echo back the first argument
       final PluginResult result = new PluginResult(PluginResult.Status.OK, "Hola todo el... " + phrase);
       callbackContext.sendPluginResult(result);
-    } else if (action.equals("listBT")) {
+    } else if (action.equals("list")) {
       String name = args.getString(0);
       listBT(callbackContext,name);
       return true;
